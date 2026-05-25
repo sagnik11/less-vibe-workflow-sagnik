@@ -147,6 +147,12 @@ const WorkflowListingClient = ({ initialWorkflowList }) => {
             >
               My Workflows
             </button>
+            <Link
+              href="/canvas"
+              className="px-6 py-4 text-sm font-black transition-all whitespace-nowrap border-b-2 uppercase tracking-widest text-zinc-500 border-transparent hover:text-purple-400 hover:border-purple-400"
+            >
+              Design Agent
+            </Link>
           </div>
         </header>
 

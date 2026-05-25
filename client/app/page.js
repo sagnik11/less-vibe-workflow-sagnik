@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { HiArrowRight } from "react-icons/hi2";
+import Image from "next/image";
 import { GoWorkflow } from "react-icons/go";
+import { RiMagicLine } from "react-icons/ri";
 
 export default function Home() {
   return (
@@ -11,18 +13,30 @@ export default function Home() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
       <nav className="relative z-10 flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
         <div className="flex items-center gap-2 font-bold text-xl tracking-tight">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(37,99,235,0.4)]">
-            <GoWorkflow className="text-white" size={20} />
-          </div>
-          <span>Workflow<span className="text-blue-500">Pro</span></span>
+          <Image src="/logo.png" alt="Logo" width={32} height={32} className="invert" />
+          <span>Canopy <span className="text-blue-500">AI</span></span>
         </div>
-        <Link 
-          href="https://muapi.ai/access-keys"
-          target="_blank"
-          className="bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 px-5 py-2 rounded-full text-sm font-medium transition-all"
-        >
-          Get Api Key
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link
+            href="/workflow"
+            className="text-sm text-zinc-400 hover:text-white transition-colors font-medium"
+          >
+            Workflows
+          </Link>
+          <Link
+            href="/canvas"
+            className="text-sm text-zinc-400 hover:text-white transition-colors font-medium"
+          >
+            Design Agent
+          </Link>
+          <Link
+            href="https://muapi.ai/access-keys"
+            target="_blank"
+            className="bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 px-5 py-2 rounded-full text-sm font-medium transition-all"
+          >
+            Get Api Key
+          </Link>
+        </div>
       </nav>
       <main className="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-32 pb-20 max-w-4xl mx-auto">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-8 animate-fade-in">
@@ -50,9 +64,13 @@ export default function Home() {
             Explore Workflows
             <HiArrowRight className="group-hover:translate-x-1 transition-transform" />
           </Link>
-          <button className="px-8 py-4 rounded-full font-bold text-zinc-400 hover:text-white hover:bg-white/5 transition-all text-sm">
-            Watch Demo
-          </button>
+          <Link
+            href="/canvas"
+            className="group relative flex items-center gap-2 bg-white/5 hover:bg-purple-600 text-white px-8 py-4 rounded-full font-bold transition-all border border-white/10 hover:border-purple-500 hover:shadow-[0_20px_40px_-15px_rgba(147,51,234,0.4)] active:scale-95"
+          >
+            <RiMagicLine className="text-purple-400 group-hover:text-white transition-colors" />
+            Design Agent
+          </Link>
         </div>
         <div className="mt-20 w-full max-w-5xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 shadow-2xl relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl opacity-10 group-hover:opacity-20 transition-opacity blur-lg" />

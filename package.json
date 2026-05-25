@@ -11,6 +11,7 @@
         "dev:app": "npm run dev -w client",
         "build:app": "npm run build -w client",
         "build:lib": "npm run build -w packages/workflow-builder",
+        "build:design-agent": "npm run build -w packages/design-agent",
         "install:all": "npm install"
     }
 }

@@ -860,7 +860,7 @@ export const presets = [
     title: "Empty Workflow",
     description: "",
     icon: "plus",
-    image: "",
+    image: "/thumbnails/empty-workflow.jpg",
     nodes: [],
     edges: []
   },
@@ -869,7 +869,7 @@ export const presets = [
     title: "Image Generator & Editor",
     description: "Simple text to image Generation and Editing with Wan 2.5",
     icon: "image",
-    image: "https://cdn.muapi.ai/outputs/e53f9cb2caf947f790154dada58a426c.jpg",
+    image: "/thumbnails/image-generator.jpg",
     nodes: [
       {
         id: "text1",
@@ -995,7 +995,7 @@ export const presets = [
     title: "Video Generator",
     description: "Simple Video Generation with Seedance Lite",
     icon: "video",
-    image: "https://cdn.muapi.ai/outputs/836c0912239f4f11a2ca333e26387152.jpg",
+    image: "/thumbnails/video-generator.jpg",
     nodes: [
       {
         id: "text1",
@@ -1091,7 +1091,7 @@ export const presets = [
     title: "Audio Generator",
     description: "Generate audio from text with Suno",
     icon: "audio",
-    image: "https://images.unsplash.com/photo-1526512340740-9217d0159da9?q=80&w=500&auto=format&fit=crop",
+    image: "/thumbnails/audio-generator.jpg",
     nodes: [
       {
         id: "text1",
@@ -1160,7 +1160,7 @@ export const presets = [
     title: "LLM Image Captioning",
     description: "Generate a prompt from an image with GPT-5",
     icon: "text",
-    image: "https://cdn.muapi.ai/outputs/a4c650a8834a4a14a82a961710617fd2.jpg",
+    image: "/thumbnails/image-captioning.jpg",
     nodes: [
       {
         id: "image1",
